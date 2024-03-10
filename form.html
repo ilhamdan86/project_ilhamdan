@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <h3>Kembali ke halaman awal</h3>
+    <a href="index.html">Halaman Awal</a>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Aktif:</label>
+                <input type="email" id="email" name="email" placeholder="Email Aktif">
+            </div>
+            <div class="form-group">
+                <label for="noHp">No HP Aktif:</label>
+                <input type="number" id="noHp" name="noHp" placeholder="No HP Aktif">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <label for="laki-laki">
+                    <input type="radio" id="laki-laki" name="jenisKelamin" value="laki-laki"> Laki-laki
+                </label>
+                <label for="perempuan">
+                    <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan"> Perempuan
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="prodi">Program Studi:</label>
+                <select id="prodi" name="prodi">
+                    <option value="">Pilih</option>
+                    <option value="teknik-informatika">Teknik Informatika</option>
+                    <option value="sistem-informasi">Sistem Informasi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Hobi:</label>
+                <label for="membaca">
+                    <input type="checkbox" id="membaca" name="hobi[]" value="membaca"> Membaca
+                </label>
+                <label for="menulis">
+                    <input type="checkbox" id="menulis" name="hobi[]" value="menulis"> Menulis
+                </label>
+                <label for="menyanyi">
+                    <input type="checkbox" id="menyanyi" name="hobi[]" value="menyanyi"> Menyanyi
+                </label>
+                <label for="olahraga">
+                    <input type="checkbox" id="olahraga" name="hobi[]" value="olahraga"> Olahraga
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap:</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat Lengkap">
+            </div>
+            <div class="form-group">
+                <label for="fotoDiri">Foto Diri:</label>
+                <input type="file" id="fotoDiri" name="fotoDiri">
+            </div>
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</html>
