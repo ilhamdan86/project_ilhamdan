@@ -1,0 +1,62 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Product card styles */
+.product-card {
+  width: calc(33% - 20px); /* Adjust width for different layouts (e.g., 25% for 4 columns) */
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+  #products {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+  .product-card {
+    width: 100%; /* Make cards full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Adjust heading size for very small screens */
+  }
+  .product-card p {
+    font-size: 14px; /* Adjust paragraph size for very small screens */
+  }
+}
